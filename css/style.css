@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+}
+
+a[href] {
+    font-size: 20px;
+    color: #FFAF42;
+}
+
+h1 {
+    font-size: 12em;
+    color: #E7840B;
+    padding: 0px;
+    margin: -30px;
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    font-family:Montserrat-SB;
+    font-size:x-small;
+    color:orange
+}
+
+.center {
+    position: absolute; /* you could also use fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: table-cell;
+    padding: 40px;
+    /* this is the code for centering text horizontially & vertically */
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "SF-Reg";
+  src: url("../fonts/sf-pro-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-SB";
+  src: url("../fonts/montserrat-semibold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Azonix";
+  src: url("../fonts/azonix.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Azonix", sans-serif;
+}
+h2,
+a {
+  font-family: "SF-Reg", sans-serif;
+}
