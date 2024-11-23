@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        window.onload = function() { // resize flash game to fit window
+            var game = document.getElementById("game");
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            game.style.width = width + "px";
+            game.style.height = height + "px";
+        };
+        window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
+
+    // Options affecting files only
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "wmode": "window",
+    "letterbox": "on",
+    "warnOnUnsupportedContent": warn,
+    "contextMenu": true,
+    "showSwfDownload": false,
+    "upgradeToHttps": window.location.protocol === "https:",
+    "maxExecutionDuration": {"secs": 15, "nanos": 0},
+    "logLevel": "error",
+    "base": basePath,
+    "menu": true,
+    "salign": "center",
+    "openUrlMode": openUrlMode,
+    "scale": "showAll",
+    "quality": "best",
+    "preloader": true,
+    "backgroundColor": "#000000",
+    "allowNetworking": "all",
+    "allowScriptAccess": true,
+    "forceAlign": "true",
+    "forceScale": "true"
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<embed>
+    <embed src="./pre-civilization-bro-176256a9b.swf" type="application/x-shockwave-flash" id="game">
+</body>
+</html>
